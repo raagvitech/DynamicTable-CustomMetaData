@@ -1,0 +1,15 @@
+<template>
+    <lightning-card icon-name="custom:custom63" title="Dynamic Table">
+        <div class="slds-m-around_medium">
+            <lightning-datatable
+                key-field="Id"
+                data={data}
+                columns={columns}
+                draft-values={saveDraftValues}
+                hide-checkbox-column
+                onsave={handleSave}
+            >
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>
